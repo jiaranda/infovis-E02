@@ -1,6 +1,7 @@
 const getData = async () => {
   const data = await d3.json(
-    "https://raw.githubusercontent.com/jiaranda/infovis-E02/main/data/iris.json"
+    "http://localhost:8000/data/iris.json",
+    (SameSite = "Strict")
   );
   return data;
 };
